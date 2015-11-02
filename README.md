@@ -1,2 +1,2 @@
 # mvcpager
-mvcpager for mvc2.0+
+mvcpager for mvc3.0+
