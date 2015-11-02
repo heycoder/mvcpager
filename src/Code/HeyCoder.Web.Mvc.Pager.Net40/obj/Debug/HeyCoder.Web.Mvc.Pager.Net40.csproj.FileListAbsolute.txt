@@ -1,0 +1,11 @@
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\HeyCoder.Web.Mvc.Pager.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\HeyCoder.Web.Mvc.Pager.pdb
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.Helpers.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.Mvc.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.Razor.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.dll
+E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.pdb
