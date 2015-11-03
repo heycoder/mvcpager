@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyCoder.Web.Mvc.Pager.Net40", "HeyCoder.Web.Mvc.Pager.Net40\HeyCoder.Web.Mvc.Pager.Net40.csproj", "{2682DA80-F35F-4691-A5F9-DF1BADCBD11B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2682DA80-F35F-4691-A5F9-DF1BADCBD11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2682DA80-F35F-4691-A5F9-DF1BADCBD11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2682DA80-F35F-4691-A5F9-DF1BADCBD11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2682DA80-F35F-4691-A5F9-DF1BADCBD11B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
