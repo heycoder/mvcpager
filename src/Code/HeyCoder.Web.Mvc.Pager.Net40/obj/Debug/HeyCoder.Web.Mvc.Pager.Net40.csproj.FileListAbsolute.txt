@@ -9,3 +9,15 @@ E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.
 E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.Razor.dll
 E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.dll
 E:\Projects\Job\HeyCoder.MvcPager\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.pdb
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.Net40.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\HeyCoder.Web.Mvc.Pager.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\HeyCoder.Web.Mvc.Pager.pdb
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.Helpers.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.Mvc.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.Razor.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Documents\GitHub\mvcpager\src\Code\HeyCoder.Web.Mvc.Pager.Net40\obj\Debug\HeyCoder.Web.Mvc.Pager.pdb
