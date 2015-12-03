@@ -14,9 +14,15 @@ namespace Demo.MVC5Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                    name: "Pager",
+                    url: "Pager/{action}/{PageIndex}",
+                    defaults: new { controller = "Pager", action = "Index", PageIndex = UrlParameter.Optional }
+                );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Pager", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

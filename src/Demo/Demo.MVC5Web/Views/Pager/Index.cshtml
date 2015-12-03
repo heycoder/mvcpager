@@ -1,4 +1,5 @@
 ﻿@using HeyCoder.Web.Mvc.Pager
+@model Demo.MVC5Web.Models.PagerModel
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,8 @@
     <link href="~/Content/css/pager.css" rel="stylesheet" />
 </head>
 <body>
-    @Html.Pager("default", new { p = Guid.NewGuid().ToString() }, new PagerOption(100, int.Parse(Request["pageindex"] ?? "1"), 10))
-    @Html.Pager("default", new { p = Guid.NewGuid().ToString() }, new PagerOption(100, int.Parse(Request["pageindex1"] ?? "1"), 10) { PageIndexParamName = "pageindex1" })
+    @Html.Pager(new { p = Guid.NewGuid().ToString() }, new PagerOption(100, Model.PageIndex, 10))
+    @Html.Pager("pager", new { p = Guid.NewGuid().ToString() }, new PagerOption(100, Model.PageIndex, 10))
+    @Html.Pager("pager", new { p = Guid.NewGuid().ToString() }, new PagerOption(100, int.Parse(Request["pageindex1"] ?? "1"), 10) { PageIndexParamName = "pageindex1" })
 </body>
 </html>
