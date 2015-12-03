@@ -193,6 +193,11 @@ namespace HeyCoder.Web.Mvc.Pager
         public bool CurrentPageInCenter { get; set; }
 
         /// <summary>
+        /// MVC路由名字
+        /// </summary>
+        public string RouteName { get; set; }
+
+        /// <summary>
         /// 初始化分页配置信息
         /// </summary>
         /// <param name="dataCount">数据总个数</param>
@@ -256,6 +261,7 @@ namespace HeyCoder.Web.Mvc.Pager
             if (string.IsNullOrEmpty(ParamNameFormat)) ParamNameFormat = "normal";
             if (string.IsNullOrEmpty(DataCountTextFormat)) DataCountTextFormat = "共{0}条数据";
             if (string.IsNullOrEmpty(PagerStatusTextFormat)) PagerStatusTextFormat = "当前：{0}/{1}";
+            if (string.IsNullOrEmpty(RouteName)) RouteName = "default";
         }
     }
 }

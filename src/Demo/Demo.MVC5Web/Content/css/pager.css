@@ -1,0 +1,59 @@
+﻿.pager {
+    padding-top: 20px;
+    color: #666;
+    width: 1000px;
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+    .pager a {
+        display: block;
+        padding: 5px 10px 5px 10px;
+        background: #f3f3f3;
+        line-height: 20px;
+        text-align: center;
+        color: #666 !important;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        border: 0 solid;
+        float: left;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .pager span {
+        display: block;
+        padding: 5px 10px 5px 10px;
+        line-height: 20px;
+        text-align: center;
+        color: #666 !important;
+        float: left;
+    }
+
+    .pager a:hover {
+        background: #39a1ea;
+        color: white !important;
+    }
+
+    .pager .currentpage {
+        background: #39a1ea;
+        color: white !important;
+    }
+
+    .pager i {
+        float: left;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+
+input.txtpage {
+    float: left;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}

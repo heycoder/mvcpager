@@ -14,6 +14,32 @@ namespace HeyCoder.Web.Mvc.Pager
         /// 分页方法
         /// </summary>
         /// <param name="html"></param>
+        /// /// <param name="option">分页选项</param>
+        /// <returns></returns>
+        public static MvcHtmlString Pager(this HtmlHelper html, PagerOption option)
+        {
+            var routeValue = new RouteValueDictionary();
+            return html.Pager(option.RouteName, routeValue, option);
+        }
+
+        /// <summary>
+        /// 分页方法
+        /// </summary>
+        /// <param name="html"></param>
+        /// <param name="routeValues">使用的路由的值</param>
+        /// <param name="option">分页选项</param>
+        /// <returns></returns>
+        public static MvcHtmlString Pager(this HtmlHelper html, object routeValues, PagerOption option)
+        {
+            var routeValue = new RouteValueDictionary();
+            if (routeValues != null) routeValue = GetDictionary<RouteValueDictionary>(routeValues, option);
+            return html.Pager(option.RouteName, routeValue, option);
+        }
+
+        /// <summary>
+        /// 分页方法
+        /// </summary>
+        /// <param name="html"></param>
         /// <param name="routeName">使用的路由名称</param>
         /// /// <param name="option">分页选项</param>
         /// <returns></returns>
