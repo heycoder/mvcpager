@@ -39,7 +39,7 @@
     color: white !important;
 }
 
-.pager .currentpage {
+.pager .active {
     background: #39a1ea;
     color: white !important;
 }
