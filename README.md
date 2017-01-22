@@ -38,7 +38,7 @@ ASP.NET(C#) mvcpager for mvc 3.0+
 </configuration>
 
 ```
-2. wiki:https://github.com/heycoder/mvcpager/wiki
+ wiki:https://github.com/heycoder/mvcpager/wiki
 
 
 ## 使用示例（Demo）
