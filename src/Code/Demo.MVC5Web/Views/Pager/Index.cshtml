@@ -1,0 +1,19 @@
+﻿@using System
+@using HeyCoder.Web.Mvc.Pager
+@model Demo.MVC5Web.Models.PagerModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HeyCoder.MvcPager Demo</title>
+    <link href="~/Content/css/pager-default.css" rel="stylesheet" />
+</head>
+<body>
+<ul>
+    <li><a href="/pager/index">theme:default</a></li>
+    <li><a href="/pager/bootstrap">theme:bootstrap</a></li>
+</ul>
+@Html.Pager(new {p = Guid.NewGuid().ToString()}, new PagerOption(100, Model.PageIndex, 10))
+@Html.Pager("pager", new {p = Guid.NewGuid().ToString()}, new PagerOption(100, Model.PageIndex, 10))
+@Html.Pager("pager", new {p = Guid.NewGuid().ToString()}, new PagerOption(100, int.Parse(Request["pageindex1"] ?? "1"), 10) {PageIndexParamName = "pageindex1"})
+</body>
+</html>

@@ -88,15 +88,15 @@ namespace HeyCoder.Web.Mvc.Pager
             if (option.PageIndex < 1) option.PageIndex = 1;
             else if (option.PageIndex > pageCount) option.PageIndex = pageCount;
             if (pageCount <= 1) return MvcHtmlString.Empty;
-            strs.AppendFormat("<div class='{0}'>", option.PagerClassName);
+            strs.AppendFormat("<ul class='{0}'>", option.PagerClassName);
             if (option.ShowDataCount)
             {
-                strs.AppendFormat("<span class='{1}'>{0}</span>", string.Format(option.DataCountTextFormat, option.DataCount), option.PagerStatusClassName);
+                strs.AppendFormat("<li><span class='{1}'>{0}</span></li>", string.Format(option.DataCountTextFormat, option.DataCount), option.PagerStatusClassName);
             }
             //添加分页状态
             if (option.ShowPagerStatus)
             {
-                strs.AppendFormat("<span class='{0}'>{1}</span>", option.PagerStatusClassName, string.Format(option.PagerStatusTextFormat, option.PageIndex, pageCount));
+                strs.AppendFormat("<li><span class='{0}'>{1}</span></li>", option.PagerStatusClassName, string.Format(option.PagerStatusTextFormat, option.PageIndex, pageCount));
             }
             //判断路由值中是否包含页码参数,不存在就添加
             if (routeValues.ContainsKey(option.PageIndexParamName))
@@ -112,11 +112,11 @@ namespace HeyCoder.Web.Mvc.Pager
             {
                 if (option.PageIndex != 1)
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), option.FirstPageButtonText, option.FirstPageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), option.FirstPageButtonText, option.FirstPageButtonClassName);
                 }
                 else
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", "javascript:void(0)", option.FirstPageButtonText, option.FirstPageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", "javascript:void(0)", option.FirstPageButtonText, option.FirstPageButtonClassName);
                 }
             }
             //计算按钮分组
@@ -132,11 +132,11 @@ namespace HeyCoder.Web.Mvc.Pager
                     int preGroupIndex = btnGroupIndex - 1;
                     int preGroupBtnStart = preGroupIndex * option.PageButtonCount;
                     routeValues[option.PageIndexParamName] = preGroupBtnStart;
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), option.PreGroupButtonText, option.PreGroupButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), option.PreGroupButtonText, option.PreGroupButtonClassName);
                 }
                 else
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", "javascript:void(0)", option.PreGroupButtonText, option.PreGroupButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", "javascript:void(0)", option.PreGroupButtonText, option.PreGroupButtonClassName);
                 }
             }
             //添加上一页按钮
@@ -145,11 +145,11 @@ namespace HeyCoder.Web.Mvc.Pager
                 if (option.PageIndex > 1)
                 {
                     routeValues[option.PageIndexParamName] = option.PageIndex > 1 ? option.PageIndex - 1 : option.PageIndex;
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), option.PrePageButtonText, option.PrePageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), option.PrePageButtonText, option.PrePageButtonClassName);
                 }
                 else
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", "javascript:void(0)", option.PrePageButtonText, option.PrePageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", "javascript:void(0)", option.PrePageButtonText, option.PrePageButtonClassName);
                 }
             }
 
@@ -172,11 +172,11 @@ namespace HeyCoder.Web.Mvc.Pager
                     routeValues[option.PageIndexParamName] = i;
                     if (i == option.PageIndex)
                     {
-                        strs.AppendFormat("<a href='{0}' class='{2}'>{1}</a>", url.RouteUrl(routeName, routeValues), i, option.CurrentPageClassName);
+                        strs.AppendFormat("<li class='{2}'><a href='{0}' class='{2}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), i, option.CurrentPageClassName);
                     }
                     else
                     {
-                        strs.AppendFormat("<a href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), i);
+                        strs.AppendFormat("<li><a href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), i);
                     }
                 }
             }
@@ -187,11 +187,11 @@ namespace HeyCoder.Web.Mvc.Pager
                 if (option.PageIndex < pageCount)
                 {
                     routeValues[option.PageIndexParamName] = option.PageIndex + 1 > pageCount ? pageCount : option.PageIndex + 1;
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), option.NextPageButtonText, option.NextPageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), option.NextPageButtonText, option.NextPageButtonClassName);
                 }
                 else
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", "javascript:void(0)", option.NextPageButtonText, option.NextPageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", "javascript:void(0)", option.NextPageButtonText, option.NextPageButtonClassName);
                 }
             }
             //添加下一组按钮
@@ -202,11 +202,11 @@ namespace HeyCoder.Web.Mvc.Pager
                     int nextGroupIndex = btnGroupIndex + 1;
                     int nextGroupBtnStart = ((nextGroupIndex - 1) * option.PageButtonCount) + 1;
                     routeValues[option.PageIndexParamName] = nextGroupBtnStart;
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), option.NextGroupButtonText, option.NextGroupButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), option.NextGroupButtonText, option.NextGroupButtonClassName);
                 }
                 else
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", "javascript:void(0)", option.NextGroupButtonText, option.NextGroupButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", "javascript:void(0)", option.NextGroupButtonText, option.NextGroupButtonClassName);
                 }
             }
             //添加尾页按钮
@@ -215,11 +215,11 @@ namespace HeyCoder.Web.Mvc.Pager
                 if (option.PageIndex < pageCount)
                 {
                     routeValues[option.PageIndexParamName] = pageCount;
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", url.RouteUrl(routeName, routeValues), option.LastPageButtonText, option.LastPageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", url.RouteUrl(routeName, routeValues), option.LastPageButtonText, option.LastPageButtonClassName);
                 }
                 else
                 {
-                    strs.AppendFormat("<a class='{2}' href='{0}'>{1}</a>", "javascript:void(0)", option.LastPageButtonText, option.LastPageButtonClassName);
+                    strs.AppendFormat("<li><a class='{2}' href='{0}'>{1}</a></li>", "javascript:void(0)", option.LastPageButtonText, option.LastPageButtonClassName);
                 }
             }
             //添加跳转区域
@@ -227,12 +227,13 @@ namespace HeyCoder.Web.Mvc.Pager
             {
                 string txtID = Guid.NewGuid().ToString();
                 string funcName = "func_" + Guid.NewGuid().ToString().Replace("-", "");
-                strs.AppendFormat("<input class='{0}' id='{1}'/>", option.GotoPageInputClassName, txtID);
-                strs.AppendFormat("<a class='{0}' href='javascript:{2}();'>{1}</a>", option.GotoPageInputClassName, option.GotoPageBtuttonText, funcName);
+                strs.AppendFormat("<li><input type='text' class='{0}' id='{1}'/>", option.GotoPageInputClassName, txtID);
+                strs.AppendFormat("<a class='{0}' href='javascript:{2}();'>{1}</a></li>", option.GotoPageButtonClassName, option.GotoPageBtuttonText, funcName);
                 string js = @"<script type='text/javascript'>
                                         function funcName()
                                         {
                                           var pageIndex=document.getElementById('{0}').value;
+                                          if(pageIndex.length==0 || !/[1-9][0-9]*/.test(pageIndex))return;
                                           var url=location.toString().toLowerCase();
                                           if (url.indexOf('{1}')<0) {
   		                                        if (url.indexOf('?')<0) {
@@ -254,7 +255,7 @@ namespace HeyCoder.Web.Mvc.Pager
                 strs.Append(js);
             }
             //结束
-            strs.Append("</div>");
+            strs.Append("</ul>");
             return MvcHtmlString.Create(strs.ToString());
         }
 
