@@ -45,14 +45,14 @@ ASP.NET(C#) mvcpager for mvc 3.0+
 
 1. Theme:Default
 ```
-<link href="https://raw.githubusercontent.com/heycoder/mvcpager/master/src/css/v1.1/pager-default.css" rel="stylesheet" />
+<link href="//cdn.ken.io/plugin/mvcpager/theme/default-1.0.css" rel="stylesheet"/>
 
 @Html.Pager(new {p = Guid.NewGuid().ToString()}, new PagerOption(100, Model.PageIndex, 10))
 ```
 2. Theme:BootStrap
 ```
-<link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
-<link href="https://raw.githubusercontent.com/heycoder/mvcpager/master/src/css/v1.1/pager-default.css" rel="stylesheet" />
+<link href="//cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
+<link href="//cdn.ken.io/plugin/mvcpager/theme/bootstrap-1.0.css" rel="stylesheet" />
 
 @Html.Pager(new {p = Guid.NewGuid().ToString()}, new PagerOption(100, Model.PageIndex, 10))
 ```
