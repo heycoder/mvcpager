@@ -243,7 +243,7 @@ namespace HeyCoder.Web.Mvc.Pager
             if (string.IsNullOrEmpty(PagerStatusClassName)) PagerStatusClassName = "pagerstatus";
             if (string.IsNullOrEmpty(CurrentPageClassName)) CurrentPageClassName = "currentpage";
             if (string.IsNullOrEmpty(FirstPageButtonClassName)) FirstPageButtonClassName = "firstPage";
-            if (string.IsNullOrEmpty(LastPageButtonClassName)) FirstPageButtonClassName = "lastPage";
+            if (string.IsNullOrEmpty(LastPageButtonClassName)) LastPageButtonClassName = "lastPage";
             if (string.IsNullOrEmpty(PreGroupButtonClassName)) PreGroupButtonClassName = "pregroup";
             if (string.IsNullOrEmpty(NextGroupButtonClassName)) NextGroupButtonClassName = "nextgroup";
             if (string.IsNullOrEmpty(PrePageButtonClassName)) PrePageButtonClassName = "prepage";
@@ -255,8 +255,8 @@ namespace HeyCoder.Web.Mvc.Pager
             if (string.IsNullOrEmpty(LastPageButtonText)) LastPageButtonText = "尾页";
             if (string.IsNullOrEmpty(PreGroupButtonText)) PreGroupButtonText = "上一组";
             if (string.IsNullOrEmpty(NextGroupButtonText)) NextGroupButtonText = "下一组";
-            if (string.IsNullOrEmpty(PrePageButtonText)) PreGroupButtonText = "上一页";
-            if (string.IsNullOrEmpty(NextPageButtonText)) NextGroupButtonText = "下一页";
+            if (string.IsNullOrEmpty(PrePageButtonText)) PrePageButtonText = "上一页";
+            if (string.IsNullOrEmpty(NextPageButtonText)) NextPageButtonText = "下一页";
             if (string.IsNullOrEmpty(GotoPageBtuttonText)) GotoPageBtuttonText = "跳转";
             if (string.IsNullOrEmpty(ParamNameFormat)) ParamNameFormat = "normal";
             if (string.IsNullOrEmpty(DataCountTextFormat)) DataCountTextFormat = "共{0}条数据";
